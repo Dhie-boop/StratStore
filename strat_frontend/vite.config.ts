@@ -4,6 +4,7 @@ import * as path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/',
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
     alias: {
@@ -12,18 +13,11 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'build',
-    assetsDir: 'assets',
+    outDir: 'dist',
+    sourcemap: false,
     rollupOptions: {
       output: {
-        assetFileNames: (assetInfo) => {
-          const info = assetInfo.name?.split('.') || []
-          let extType = info[info.length - 1] || ''
-          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-            extType = 'img'
-          }
-          return `assets/${extType}/[name]-[hash][extname]`
-        },
+        manualChunks: undefined
       }
     }
   }
