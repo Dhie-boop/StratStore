@@ -1,6 +1,6 @@
 // Import the authentication utilities
 import { getAccessToken } from './authService';
-import type { Product, Category, Customer, Order, Review, Cart, Wishlist } from '../types';
+import type { Product, Category, Customer, Order, Review } from '../types';
 
 // Base URL for the API
 const API_URL = 'http://localhost:8000/api'; // Make sure this matches your Django server URL

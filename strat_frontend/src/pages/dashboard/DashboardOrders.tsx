@@ -13,7 +13,6 @@ interface Order {
 const DashboardOrders: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [filterStatus, setFilterStatus] = useState<string>('all')
-  const [selectedOrders, setSelectedOrders] = useState<string[]>([])
 
   const mockOrders: Order[] = [
     {
