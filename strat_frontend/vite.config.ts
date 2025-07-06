@@ -4,7 +4,7 @@ import * as path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: './',
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
     alias: {
@@ -13,11 +13,18 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'build',
+    outDir: 'dist',
     sourcemap: false,
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
-        manualChunks: undefined
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          motion: ['framer-motion'],
+          icons: ['react-icons'],
+          charts: ['chart.js', 'react-chartjs-2']
+        }
       }
     }
   }
