@@ -9,39 +9,39 @@ import { getImageUrl } from '../utils/imageUtils';
 const getCategoryImage = (categoryName: string): string => {
   const categoryImages: { [key: string]: string } = {
     // Apple Watch specific (use the real Apple Watch image)
-    'watch': '/website_design_pictures/category images/Apple Watch.png',
-    'apple watch': '/website_design_pictures/category images/Apple Watch.png',
-    'smartwatch': '/website_design_pictures/category images/Apple Watch.png',
-    'wearable': '/website_design_pictures/category images/Apple Watch.png',
+    'watch': '/images/category images/Apple Watch.png',
+    'apple watch': '/images/category images/Apple Watch.png',
+    'smartwatch': '/images/category images/Apple Watch.png',
+    'wearable': '/images/category images/Apple Watch.png',
     
     // iPhone/Apple phone categories
-    'iphone': '/website_design_pictures/category images/iphone-card-40-iphone15hero-202309-removebg-preview.png',
-    'apple phone': '/website_design_pictures/category images/iphone-card-40-iphone15hero-202309-removebg-preview.png',
-    'ios': '/website_design_pictures/category images/iphone-card-40-iphone15hero-202309-removebg-preview.png',
+    'iphone': '/images/category images/iphone-card-40-iphone15hero-202309-removebg-preview.png',
+    'apple phone': '/images/category images/iphone-card-40-iphone15hero-202309-removebg-preview.png',
+    'ios': '/images/category images/iphone-card-40-iphone15hero-202309-removebg-preview.png',
     
     // Samsung/Galaxy categories  
-    'samsung': '/website_design_pictures/category images/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front-removebg-preview.png',
-    'galaxy': '/website_design_pictures/category images/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front-removebg-preview.png',
-    'android': '/website_design_pictures/category images/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front-removebg-preview.png',
+    'samsung': '/images/category images/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front-removebg-preview.png',
+    'galaxy': '/images/category images/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front-removebg-preview.png',
+    'android': '/images/category images/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front-removebg-preview.png',
     
     // General smartphone categories
-    'smartphone': '/website_design_pictures/category images/product_s10__c724044usymq_large_2x.png',
-    'phone': '/website_design_pictures/category images/product_s10__c724044usymq_large_2x.png',
-    'mobile': '/website_design_pictures/category images/product_s10__c724044usymq_large_2x.png',
-    'cell': '/website_design_pictures/category images/product_s10__c724044usymq_large_2x.png',
+    'smartphone': '/images/category images/product_s10__c724044usymq_large_2x.png',
+    'phone': '/images/category images/product_s10__c724044usymq_large_2x.png',
+    'mobile': '/images/category images/product_s10__c724044usymq_large_2x.png',
+    'cell': '/images/category images/product_s10__c724044usymq_large_2x.png',
     
     // Apple general (but not watch) - prioritize specific matches first
-    'apple': '/website_design_pictures/category images/iphone-card-40-iphone15hero-202309-removebg-preview.png',
+    'apple': '/images/category images/iphone-card-40-iphone15hero-202309-removebg-preview.png',
     
     // Electronics/Tech categories
-    'electronics': '/website_design_pictures/category images/IMG_9488-scaled-removebg-preview.png',
-    'tech': '/website_design_pictures/category images/IMG_9488-scaled-removebg-preview.png',
-    'technology': '/website_design_pictures/category images/IMG_9488-scaled-removebg-preview.png',
-    'gadget': '/website_design_pictures/category images/IMG_9488-scaled-removebg-preview.png',
-    'device': '/website_design_pictures/category images/IMG_9488-scaled-removebg-preview.png',
+    'electronics': '/images/category images/IMG_9488-scaled-removebg-preview.png',
+    'tech': '/images/category images/IMG_9488-scaled-removebg-preview.png',
+    'technology': '/images/category images/IMG_9488-scaled-removebg-preview.png',
+    'gadget': '/images/category images/IMG_9488-scaled-removebg-preview.png',
+    'device': '/images/category images/IMG_9488-scaled-removebg-preview.png',
     
     // Default fallback
-    'default': '/website_design_pictures/category images/IMG_9488-scaled-removebg-preview.png'
+    'default': '/images/category images/IMG_9488-scaled-removebg-preview.png'
   };
 
   const lowerCaseName = categoryName.toLowerCase();
@@ -73,19 +73,19 @@ export default function HomePage() {
     {
       title: "Discover Amazing Products",
       subtitle: "Shop our curated collection of premium products",
-      image: "/website_design_pictures/highlights_design_endframe__bmpm6rzrb45e_large_2x-removebg-preview.png",
+      image: "/images/highlights_design_endframe__bmpm6rzrb45e_large_2x-removebg-preview.png",
       gradient: "from-blue-600 via-purple-600 to-indigo-800"
     },
     {
       title: "Latest Technology",
       subtitle: "Experience the future with our cutting-edge devices",
-      image: "/website_design_pictures/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front-removebg-preview.png",
+      image: "/images/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front-removebg-preview.png",
       gradient: "from-purple-600 via-pink-600 to-red-600"
     },
     {
       title: "Premium Quality",
       subtitle: "Handpicked products for the discerning customer",
-      image: "/website_design_pictures/product_u2__hedpiz396nue_large_2x.png",
+      image: "/images/product_u2__hedpiz396nue_large_2x.png",
       gradient: "from-green-600 via-teal-600 to-blue-600"
     }
   ];
