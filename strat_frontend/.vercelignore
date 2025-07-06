@@ -3,3 +3,6 @@ node_modules
 *.log
 .env*
 .vercel
+.vscode
+components
+website_design_pictures
