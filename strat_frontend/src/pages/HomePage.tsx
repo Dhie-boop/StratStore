@@ -132,6 +132,14 @@ export default function HomePage() {
     fetchData();
   }, []);
 
+  // Preload hero images for smooth transitions
+  useEffect(() => {
+    heroSlides.forEach(slide => {
+      const img = new Image();
+      img.src = slide.image;
+    });
+  }, [heroSlides]);
+
   // Auto-slide effect for hero
   useEffect(() => {
     const timer = setInterval(() => {
